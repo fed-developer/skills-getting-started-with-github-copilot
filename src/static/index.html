@@ -60,7 +60,11 @@
                 <h4>${activityName}</h4>
                 <p>${activityDetails.description}</p>
                 <p><strong>Schedule:</strong> ${activityDetails.schedule}</p>
-                <p><strong>Participants:</strong> ${activityDetails.participants.join(", ")}</p>
+                <p><strong>Availability:</strong> ${activityDetails.availability} spots left</p>
+                <div class="current-participants">
+                  <strong>Current Participants:</strong>
+                  ${activityDetails.participants.map(participant => `<span>${participant}</span>`).join("")}
+                </div>
               `;
               
               activitiesList.appendChild(activityCard);

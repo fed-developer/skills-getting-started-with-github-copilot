@@ -141,6 +141,21 @@ button:hover {
   display: none;
 }
 
+.current-participants {
+  margin-top: 10px;
+}
+
+.current-participants span {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
